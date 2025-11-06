@@ -37,7 +37,7 @@ export default function Section6() {
   );
 
   return (
-    <div className='mb-[100px] max-w-7xl m-auto flex justify-center items-center flex-col mt-12 px-4'> 
+    <div className='mb-[100px] max-w-7xl m-auto flex justify-center items-center flex-col mt-12 px-4 mt-[150px]'> 
 
       <div className='flex flex-col max-sm:gap-4 max-sm:text-center justify-center items-center mb-12 gap-8'>
         <p className='text-[20px] text-[#7B4AE2] rounded-2xl flex justify-center bg-[#7B4AE21A] w-[234px] font-bold max-sm:ml-0'>
