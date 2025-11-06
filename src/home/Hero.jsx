@@ -1,8 +1,8 @@
 import React from 'react'
 import { FaGithub, FaTelegram } from 'react-icons/fa'
 import { RxLinkedinLogo } from 'react-icons/rx'
-
-export default function Hero() {
+import SplitText from "@/components/SplitText";
+export default function Hero({handleAnimationComplete}) {
     return (
         <div className='max-w-7xl m-auto mt-[87px] px-4'>
             <div className='flex justify-between items-center flex-wrap md:flex-nowrap'>
@@ -11,7 +11,20 @@ export default function Hero() {
                         👋 Saudações!
                     </h2>
                     <p className='mb-[20px] md:mb-[50px] text-white text-[36px] md:text-[54px] font-bold leading-tight'>
-                        Pilar <br /> Ch
+                       <SplitText
+  text="Quvonch-Fronted"
+  className="text-[48px] font-semibold text-center"
+  delay={100}
+  duration={1}
+  ease="power3.out"
+  splitType="chars"
+  from={{ opacity: 0, y: 40 }}
+  to={{ opacity: 1, y: 0 }}
+  threshold={0.1}
+  rootMargin="-100px"
+  textAlign="center"
+  onLetterAnimationComplete={handleAnimationComplete}
+/>
                     </p>
                     <span className='text-[#FFFFFF80] block mb-4'>
                         Front-end developer · UI designer

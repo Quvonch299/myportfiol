@@ -3,14 +3,15 @@ import React from "react";
 
 export default function MoveItCard() {
   return (
-    <div className="bg-[#0f0f1a] text-white w-full rounded-2xl p-6 shadow-lg border-[#7B4AE280] border-[1px] hover:bg-[#7B4AE21A] hover:border-none duration-500">
-      <ElectricBorder
+    <div >
+    <ElectricBorder
         color="#7df9ff"
         speed={1}
         chaos={0.5}
         thickness={2}
         style={{ borderRadius: 16 }}
       >
+    <div className="bg-[#0f0f1a] text-white w-full rounded-2xl p-6 shadow-lg        ">
         <div>
           <h2 className="text-xl font-bold mb-2">Move.it</h2>
           <p className="text-gray-400 text-sm mb-4">
@@ -31,7 +32,8 @@ export default function MoveItCard() {
             />
           </div>
         </div>
-      </ElectricBorder>
     </div>
+      </ElectricBorder>
+      </div>
   );
 }
