@@ -13,7 +13,7 @@ export default function Hero({handleAnimationComplete}) {
                     <p className='mb-[20px] md:mb-[50px] text-white text-[36px] md:text-[54px] font-bold leading-tight'>
                        <SplitText
   text="Quvonch-Fronted"
-  className="text-[48px] font-semibold text-center"
+  className="text-[48px] font-semibold text-center max-sm:text-[30px]"
   delay={100}
   duration={1}
   ease="power3.out"
