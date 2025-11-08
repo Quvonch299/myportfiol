@@ -7,13 +7,13 @@ export default function Section6() {
   const dailyTechs = [
     { name: 'React', icon: <FaReact className="text-[#61DBFB]"/>, level: 90 },
     { name: 'JavaScript', icon: <FaJsSquare className="text-[#F7DF1E]"/>, level: 95 },
-    { name: 'TypeScript', icon: <FaJsSquare className="text-[#3178C6]"/>, level: 0 },
     { name: 'HTML', icon: <FaHtml5 className="text-[#E34F26]"/>, level: 100 },
     { name: 'CSS', icon: <FaCss3Alt className="text-[#1572B6]"/>, level: 99 },
     { name: 'Node.js', icon: <FaNodeJs className="text-[#3C873A]"/>, level: 70 },
   ];
-
+  
   const otherTechs = [
+    { name: 'TypeScript', icon: <FaJsSquare className="text-[#3178C6]"/>, level: 0 },
     { name: 'Python', icon: <FaPython className="text-[#3776AB]"/>, level: 20 },
     { name: 'Vue', icon: <FaJsSquare className="text-[#42B883]"/>, level: 0 },
     { name: 'Docker', icon: <FaNodeJs className="text-[#0db7ed]"/>, level: 0 },
@@ -48,13 +48,13 @@ export default function Section6() {
 
       <div className='flex gap-4 mb-8'>
         <button 
-          className={`px-4 py-2 rounded-xl font-bold ${activeTab === 'daily' ? 'bg-[#7B4AE2] text-white' : 'bg-[#7B4AE21A] text-[#7B4AE2]'}`}
+          className={`px-4 py-2 rounded-xl font-bold ${activeTab == 'daily' ? 'bg-[#7B4AE2] text-white' : 'bg-[#7B4AE21A] text-[#7B4AE2]'}`}
           onClick={() => setActiveTab('daily')}
         >
        Hight Skills
         </button>
         <button 
-          className={`px-4 py-2 rounded-xl font-bold ${activeTab === 'other' ? 'bg-[#7B4AE2] text-white' : 'bg-[#7B4AE21A] text-[#7B4AE2]'}`}
+          className={`px-4 py-2 rounded-xl font-bold ${activeTab == 'other' ? 'bg-[#7B4AE2] text-white' : 'bg-[#7B4AE21A] text-[#7B4AE2]'}`}
           onClick={() => setActiveTab('other')}
         >
      Less Skills
